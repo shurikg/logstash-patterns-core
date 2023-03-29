@@ -1,7 +1,6 @@
-DATA .*?
-START_REQUEST_ID o%{DATA} 
-END_REQUEST_ID i%{DATA}
-# USERNAME [a-zA-Z0-9._-]+
+START_REQUEST_ID i%{DATA} 
+END_REQUEST_ID o%{DATA}
+THREAD_NAME [^\]]*]
 # USER %{USERNAME}
 # EMAILLOCALPART [a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~]{1,64}(?:\.[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~]{1,62}){0,63}
 # EMAILADDRESS %{EMAILLOCALPART}@%{HOSTNAME}
